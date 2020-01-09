@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginui"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bookiconIV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        app:srcCompat="@drawable/book" />
+
+    <TextView
+        android:id="@+id/nameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookiconIV"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/disney"
+        android:text="A c m o s "
+        android:textColor="@color/shiny_blue"
+        android:textSize="60dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginRight="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/emailiconIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/mail_icon"
+            android:tint="@color/dull_blue" />
+
+        <EditText
+            android:id="@+id/emailTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="2dp"
+            android:background="#00000000"
+            android:fontFamily="@font/liberation_serif"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="290dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/LL1"
+        android:layout_marginTop="15dp"
+        android:background="@color/dull_blue" />
+
+    <LinearLayout
+        android:id="@+id/LL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/passwordiconTV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/password"
+            android:tint="@color/dull_blue" />
+
+        <EditText
+            android:id="@+id/passwordTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="2dp"
+            android:background="#00000000"
+            android:fontFamily="@font/liberation_serif"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="290dp"
+        android:layout_marginRight="45dp"
+        android:padding="15dp"
+        app:srcCompat="@drawable/circle" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="270dp"
+        android:layout_marginRight="15dp"
+        android:padding="18dp"
+        app:srcCompat="@drawable/circle" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="324dp"
+        android:layout_marginRight="25dp"
+        android:padding="15dp"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/googleIV"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="374dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/circle"
+        android:padding="15dp"
+        app:srcCompat="@drawable/google" />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="468dp"
+        android:layout_marginRight="50dp"
+        app:srcCompat="@drawable/circle" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="424dp"
+        android:layout_marginRight="2dp"
+        android:padding="15dp"
+        app:srcCompat="@drawable/circle" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="480dp"
+        android:layout_marginRight="15dp"
+        android:padding="18dp"
+        app:srcCompat="@drawable/circle" />
+
+    <Button
+        android:id="@+id/loginIV"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/LL2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/shiny_blue"
+        android:fontFamily="@font/liberation_serif"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>
