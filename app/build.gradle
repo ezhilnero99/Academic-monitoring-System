@@ -46,7 +46,12 @@ dependencies {
     implementation 'androidx.multidex:multidex:2.0.1'
     //picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
-
+    //cardview
+    implementation 'androidx.cardview:cardview:1.0.0'
+    //gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
+    //browser
+    implementation 'androidx.browser:browser:1.0.0'
 
 }
 apply plugin: 'com.google.gms.google-services'

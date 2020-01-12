@@ -1,4 +1,4 @@
-package com.example.acmod;
+package com.example.acmod.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;

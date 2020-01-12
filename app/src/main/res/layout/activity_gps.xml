@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/homeui"
+    tools:context=".GpsActivity">
+
+    <ImageView
+        android:id="@+id/backIV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/back"
+        android:tint="@color/shiny_blue" />
+
+    <TextView
+        android:id="@+id/hintTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backIV"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/crimson"
+        android:text="Search Results:"
+        android:textColor="@color/gray"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/schooldetailsRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="120dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/animeRL"
+        android:layout_width="400dp"
+        android:layout_height="600dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/head1TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/arima"
+            android:text="Fetching Details"
+            android:textColor="@color/shiny_blue"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/head2TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/head1TV"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/crimson"
+            android:text="Searching in your location"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/matt_pink" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/matt_gray" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="90dp"
+        android:background="@color/matt_blue" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/simple_circle"
+        android:padding="12dp"
+        app:srcCompat="@drawable/gps"
+        android:tint="@color/matt_gray"
+        android:scaleType="centerInside"/>
+
+</RelativeLayout>

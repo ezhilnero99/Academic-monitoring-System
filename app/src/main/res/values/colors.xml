@@ -4,13 +4,27 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
-    <color name="shiny_blue">#076d99</color>
+    <color name="shiny_blue">#0057ff</color>
     <color name="dull_blue">#bdd3fc</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
+
+    <!--    color-set-1-->
     <color name="classy_purple">#d767f6</color>
     <color name="cute_blue">#2ddae3</color>
     <color name="hot_orange">#f56a30</color>
     <color name="good_green">#00dd7c</color>
 
+    <!--    color-set-2-->
+    <color name="gray">#8B8B8B</color>
+    <color name="chromic_yellow">#ffdf8a</color>
+    <color name="mild_pink">#ff9cb1</color>
+
+    <!--    color-set-3-->
+    <color name="matt_blue">#c8e8e5</color>
+    <color name="matt_gray">#bfbfbf</color>
+    <color name="matt_pink">#FADCB9</color>
+    <color name="blue_dark">#5ABCBD</color>
+    <color name="gray_dark">#615f66</color>
+    <color name="pink_dark">#DB9B5D</color>
 </resources>

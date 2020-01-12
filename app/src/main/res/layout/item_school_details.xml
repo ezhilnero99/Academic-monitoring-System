@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="15dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/searchRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="65dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/sharpy_box"
+            android:backgroundTint="@color/matt_gray" />
+
+        <ImageView
+            android:id="@+id/phoneIV"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="65dp"
+            android:layout_marginRight="5dp"
+            android:padding="12dp"
+            android:src="@drawable/phone" />
+
+        <ImageView
+            android:id="@+id/logoIV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/search" />
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/logoIV"
+            android:fontFamily="@font/thin_block"
+            android:text="Search For Schools"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/addressTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTV"
+            android:layout_toRightOf="@id/logoIV"
+            android:fontFamily="@font/arima"
+            android:text="Search and make contact..."
+            android:textColor="@color/matt_gray"
+            android:textSize="13dp" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/matt_gray" />
+    </RelativeLayout>
+
+</LinearLayout>
