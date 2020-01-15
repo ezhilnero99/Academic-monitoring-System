@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/box"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="15dp">
+
+    <RelativeLayout
+        android:id="@+id/searchRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/qnumTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/arima"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="1."
+            android:textAlignment="gravity"
+            android:textColor="@color/shiny_blue"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/quesTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/qnumTV"
+            android:fontFamily="@font/crimson"
+            android:text="Digital classrooms or ICT labs or virtual classrooms- Availability and maintenance."
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:id="@+id/ratedLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quesTV"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/ratedTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/arima"
+                android:text="Rated :"
+                android:textColor="@color/shiny_blue"
+                android:textSize="20dp" />
+            <ImageView
+                android:id="@+id/star1IV"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/star_gray"
+                android:padding="8dp"/>
+            <ImageView
+                android:id="@+id/star2IV"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/star_gray"
+                android:padding="8dp"/>
+            <ImageView
+                android:id="@+id/star3IV"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/star_gray"
+                android:padding="8dp"/>
+            <ImageView
+                android:id="@+id/star4IV"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/star_gray"
+                android:padding="8dp"/>
+            <ImageView
+                android:id="@+id/star5IV"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/star_gray"
+                android:padding="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/answerLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratedLL"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/answerhintTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/arima"
+                android:text="Answer :"
+                android:textColor="@color/shiny_blue"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/answerTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/arima"
+                android:text="Your answer will display here."
+                android:textColor="@color/gray"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/uploadsLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/answerLL"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/uploadshintTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/arima"
+                android:text="Uploads :"
+                android:textColor="@color/shiny_blue"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/uploadsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/arima"
+                android:text="Your Uploads will display here."
+                android:textColor="@color/gray"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/answerBT"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/arima"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/uploadsLL"
+            android:background="@drawable/button_rounded"
+            android:backgroundTint="@color/shiny_blue"
+            android:text="Answer"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

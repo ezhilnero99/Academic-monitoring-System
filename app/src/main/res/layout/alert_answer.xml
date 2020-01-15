@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/sharpy_box"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/searchRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <View
+            android:id="@+id/clrback2"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sharpy_box"
+            android:backgroundTint="@color/matt_gray"
+            android:layout_marginBottom="15dp"/>
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:padding="4dp"
+            android:tint="@color/gray_dark"
+            app:srcCompat="@drawable/list" />
+
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/thin_block"
+            android:text="Question"
+            android:textColor="@color/gray_dark"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/questionTV"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTV"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/arima"
+            android:text="Are you sure you want to log out"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:id="@+id/rateLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/questionTV"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/ratedTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/arima"
+                android:text="Rate:"
+                android:textColor="@color/shiny_blue"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/st1IV"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:padding="8dp"
+                android:src="@drawable/star_gray" />
+
+            <ImageView
+                android:id="@+id/st2IV"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:padding="8dp"
+                android:src="@drawable/star_gray" />
+
+            <ImageView
+                android:id="@+id/st3IV"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:padding="8dp"
+                android:src="@drawable/star_gray" />
+
+            <ImageView
+                android:id="@+id/st4IV"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:padding="8dp"
+                android:src="@drawable/star_gray" />
+
+            <ImageView
+                android:id="@+id/st5IV"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:padding="8dp"
+                android:src="@drawable/star_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/yesnoLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rateLL"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/chooseTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/arima"
+                android:text="Choose :"
+                android:textColor="@color/shiny_blue"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rateLL"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/yesBT"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/button_rounded_gray"
+                    android:layout_marginRight="10dp"
+                    android:text="Yes"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/noBT"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_rounded_gray"
+                    android:text="No"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ansLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yesnoLL"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="25dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/arima"
+                android:text="Answer : "
+                android:textColor="@color/shiny_blue"
+                android:textSize="16dp" />
+            <EditText
+                android:id="@+id/answerET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write Your Answer Here ..."
+                android:layout_marginTop="8dp"
+                android:textSize="18dp"
+                android:textColor="@color/gray_dark"
+                android:background="#00000000"
+                android:scrollHorizontally="true"
+                android:inputType="text"
+                />
+
+            
+        </LinearLayout>
+        <Button
+            android:id="@+id/cancelBT"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/arima"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@id/answeBT"
+            android:layout_below="@id/ansLL"
+            android:background="@drawable/button_rounded"
+            android:backgroundTint="@color/shiny_blue"
+            android:layout_marginTop="10dp"
+            android:text="Cancel"/>
+        <Button
+            android:id="@+id/answeBT"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/arima"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ansLL"
+            android:background="@drawable/button_rounded"
+            android:backgroundTint="@color/shiny_blue"
+            android:layout_marginTop="10dp"
+            android:text="Submit"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

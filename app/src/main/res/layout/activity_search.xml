@@ -125,7 +125,7 @@
         android:layout_marginBottom="35dp"
         android:background="@drawable/simple_circle"
         android:padding="12dp"
-        app:srcCompat="@drawable/gps"
+        app:srcCompat="@drawable/list"
         android:tint="@color/matt_gray"
         android:scaleType="centerInside"/>
     <pl.droidsonroids.gif.GifImageView

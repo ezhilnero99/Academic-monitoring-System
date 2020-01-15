@@ -34,6 +34,7 @@ import android.view.animation.Interpolator;
 import android.view.animation.PathInterpolator;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -55,6 +56,7 @@ import java.util.Map;
 public class GpsActivity extends AppCompatActivity {
     ImageView backIV;
     RelativeLayout animeRL;
+    LinearLayout animationLL;
     RecyclerView schooldetailsRV;
     private static final String TAG = "gps_act_test";
 
@@ -86,6 +88,16 @@ public class GpsActivity extends AppCompatActivity {
         //initiating UI elements
         intiUI();
 
+        //animation
+        animationLL.setVisibility(View.VISIBLE);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                animationLL.setVisibility(View.INVISIBLE);
+                schooldetailsRV.setVisibility(View.VISIBLE);
+            }
+        }, 2000);
+
         //backbutton
         backIV.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,6 +115,7 @@ public class GpsActivity extends AppCompatActivity {
         animeRL = findViewById(R.id.animeRL);
         backIV = findViewById(R.id.backIV);
         schooldetailsRV = findViewById(R.id.schooldetailsRV);
+        animationLL = findViewById(R.id.animationLL);
         //setting layout manager for recycler view
         LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         schooldetailsRV.setLayoutManager(layoutManager);
@@ -149,6 +162,13 @@ public class GpsActivity extends AppCompatActivity {
                         startActivity(callintent);
                     }
                 });
+                holder.searchRL.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(getApplicationContext(),QuestionsActivity.class);
+                        startActivity(intent);
+                    }
+                });
 
             }
 
@@ -172,6 +192,7 @@ public class GpsActivity extends AppCompatActivity {
     public class FeedViewHolder extends RecyclerView.ViewHolder {
         public ImageView logoIV, phoneIV;
         public TextView nameTV, addressTV;
+        public RelativeLayout searchRL;
 
         public FeedViewHolder(View itemView) {
             super(itemView);
@@ -179,6 +200,7 @@ public class GpsActivity extends AppCompatActivity {
             phoneIV = itemView.findViewById(R.id.phoneIV);
             nameTV = itemView.findViewById(R.id.nameTV);
             addressTV = itemView.findViewById(R.id.addressTV);
+            searchRL = itemView.findViewById(R.id.searchRL);
 
 
         }
