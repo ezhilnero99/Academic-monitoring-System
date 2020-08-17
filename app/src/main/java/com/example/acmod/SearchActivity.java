@@ -52,7 +52,7 @@ import java.util.Map;
 
 public class SearchActivity extends AppCompatActivity {
 
-    ImageView backIV, searchIV,progressIV;
+    ImageView backIV, searchIV, progressIV;
     EditText searchET;
     RecyclerView schooldetailsRV;
 
@@ -128,16 +128,20 @@ public class SearchActivity extends AppCompatActivity {
         result_school_det.clear();
         CommonUtils.hideKeyboard(SearchActivity.this);
         key = searchET.getText().toString().toLowerCase().trim();
-        for (int i = 0; i < school_det.size(); i++) {
-            if (school_det.get(i).getName().toLowerCase().contains(key) || school_det.get(i).getAddress().toLowerCase().contains(key)) {
-                result_school_det.add(school_det.get(i));
+        if (!key.isEmpty()) {
+            for (int i = 0; i < school_det.size(); i++) {
+                if (school_det.get(i).getName().toLowerCase().contains(key) || school_det.get(i).getAddress().toLowerCase().contains(key)) {
+                    result_school_det.add(school_det.get(i));
+                }
             }
+            if (result_school_det != null) {
+                progressIV.setVisibility(View.GONE);
+            }
+            schooldetailsRV.setAdapter(new SearchSchoolAdapter(getApplicationContext(), result_school_det, SearchActivity.this));
         }
-        if(result_school_det!=null){
-            progressIV.setVisibility(View.GONE);
+        else {
+            Toast.makeText(this, "Search Key Empty", Toast.LENGTH_SHORT).show();
         }
-        schooldetailsRV.setAdapter(new SearchSchoolAdapter(getApplicationContext(), result_school_det, SearchActivity.this));
-
     }
 
     private void fetchdata() {

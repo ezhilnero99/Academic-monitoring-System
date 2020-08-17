@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@mipmap/homeui"
     android:fitsSystemWindows="true"
-    android:orientation="vertical"
     tools:context=".HomeActivity">
 
 

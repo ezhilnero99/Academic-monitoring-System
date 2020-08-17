@@ -14,146 +14,151 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="200dp"
-        android:fontFamily="@font/thin_block"
-        android:text="Login"
-        android:textColor="@color/black"
-        android:textSize="35dp"
-        android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/thin_block"
+            android:text="Login."
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:fontFamily="@font/crimson"
-        android:text="Use authorised credentials to login"
-        android:textColor="@color/gray"
-        android:layout_marginBottom="5dp"
-        android:textSize="18dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/crimson"
+            android:text="Use authorised credentials to login"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/crimson"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="60dp"
-        android:text="Email"
-        android:textColor="@color/gray"
-        android:layout_marginBottom="5dp"
-        android:textSize="13dp" />
-    <EditText
-        android:id="@+id/inputTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
-        android:layout_gravity="bottom"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="2dp"
-        android:background="#00000000"
-        android:fontFamily="@font/liberation_serif"
-        android:maxLines="1"
-        android:scrollHorizontally="true"
-        android:textSize="20dp"
-        android:textStyle="italic" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/crimson"
+            android:text="Email"
+            android:textColor="@color/gray"
+            android:textSize="13dp" />
 
-    <View
-        android:id="@+id/view1"
-        android:layout_width="260dp"
-        android:layout_height="1dp"
-        android:layout_below="@id/LL1"
-        android:layout_marginLeft="85dp"
-        android:background="@color/dull_blue" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/crimson"
-        android:layout_marginLeft="70dp"
-        android:text="Password"
-        android:layout_marginTop="5dp"
-        android:textColor="@color/gray"
-        android:layout_marginBottom="5dp"
-        android:textSize="13dp" />
+        <EditText
+            android:id="@+id/inputTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="#00000000"
+            android:fontFamily="@font/liberation_serif"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textSize="20dp"
+            android:textStyle="italic" />
 
-    <EditText
-        android:id="@+id/passwordTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="2dp"
-        android:background="#00000000"
-        android:fontFamily="@font/liberation_serif"
-        android:inputType="textPassword"
-        android:maxLines="1"
-        android:scrollHorizontally="true"
-        android:textSize="20dp"
-        android:textStyle="italic" />
-    <View
-        android:id="@+id/view2"
-        android:layout_width="260dp"
-        android:layout_height="1dp"
-        android:layout_below="@id/LL1"
-        android:layout_marginLeft="80dp"
-        android:background="@color/dull_blue" />
+        <View
+            android:id="@+id/view1"
+            android:layout_width="260dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/LL1"
+            android:layout_marginLeft="85dp"
+            android:background="@color/dull_blue" />
 
-    <Button
-        android:id="@+id/loginIV"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/LL2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
-        android:layout_marginLeft="240dp"
-        android:background="@drawable/button"
-        android:backgroundTint="@color/shiny_blue"
-        android:fontFamily="@font/liberation_serif"
-        android:text="Login"
-        android:textColor="@color/white"
-        android:textStyle="bold" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center_vertical"
-        android:fontFamily="@font/disney"
-        android:text="OR"
-        android:textColor="@color/black"
-        android:layout_marginTop="30dp"
-        android:textSize="28dp" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center_vertical"
-        android:fontFamily="@font/crimson"
-        android:text="Use Google SignIn"
-        android:textColor="@color/gray"
-        android:layout_marginBottom="5dp"
-        android:textSize="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/crimson"
+            android:text="Password"
+            android:textColor="@color/gray"
+            android:textSize="13dp" />
 
-    <ImageView
-        android:id="@+id/googleIV"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/circle"
-        android:padding="15dp"
-        android:layout_gravity="center_vertical|center_horizontal"
-        app:srcCompat="@drawable/google" />
+        <EditText
+            android:id="@+id/passwordTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="#00000000"
+            android:fontFamily="@font/liberation_serif"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="260dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/LL1"
+            android:layout_marginLeft="80dp"
+            android:background="@color/dull_blue" />
+
+        <Button
+            android:id="@+id/loginIV"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/LL2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/shiny_blue"
+            android:fontFamily="@font/liberation_serif"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/disney"
+            android:text="OR"
+            android:textColor="@color/black"
+            android:textSize="28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/crimson"
+            android:text="Use Google SignIn"
+            android:textColor="@color/gray"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/googleIV"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle"
+            android:padding="15dp"
+            app:srcCompat="@drawable/google" />
     </LinearLayout>
 
     <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/progressIV"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:visibility="gone"
-        android:id="@+id/progressIV"
         android:layout_centerInParent="true"
-        android:src="@drawable/bookish"
+        android:background="@drawable/circle"
         android:padding="6dp"
-        android:background="@drawable/circle"/>
+        android:src="@drawable/bookish"
+        android:visibility="gone" />
 
 
 </RelativeLayout>
