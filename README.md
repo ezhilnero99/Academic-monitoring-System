@@ -27,7 +27,7 @@ After choosing a particular school the user the fill up the questionnaires. Seve
 
 # Answers Page
 
-Each questionaire may have anyone of the three different types of answers.
+Each questionaire may have any of the three different types of answers.
 - Yes or no
 - ratings
 - descriptive
