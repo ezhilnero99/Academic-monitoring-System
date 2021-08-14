@@ -38,4 +38,4 @@ Each questionaire may have any of the three different types of answers.
 
 User can also search for a particular school or a schools is a particular location using a keyword. The user can then use navigation system to reach the school or can contact them.
 
-![Search Page](/img/search.jpg)
+![Search Page](/imgs/search.jpg)
